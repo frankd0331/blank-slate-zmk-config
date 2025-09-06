@@ -32,3 +32,6 @@ And then comment out the line in `config/lpgalaxy_blank_slate.conf`:
 ```
 # CONFIG_ZMK_PM_SOFT_OFF=y
 ```
+
+todo:
+ok so the bottom row 3rd key over i tried to make it a layer for f1-f12 but that doesn't seem to work, maybe find a use for it in macos, idk
