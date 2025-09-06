@@ -81,7 +81,7 @@
  &kp LSHFT  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp SEMI      &kp RET
 #endif
 #ifdef TBLE_DUAL_2U
- &kp LCTRL  &kp LALT   &kp LALT   &kp LCMD         &mo NUM_L                        &kp SPACE                &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT
+ &kp LCTRL  &kp LALT   &mo SYM_L   &kp LCMD         &mo NUM_L                        &kp SPACE                &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT
 #elif defined(TBLE_MIT)
  &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
 #else
@@ -93,9 +93,9 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&trans &trans     &trans     &trans      &trans          &trans       &trans     &trans         &trans      &trans     &trans     &trans
-&mo NAV_L     &trans     &trans     &trans      &trans          &trans            &kp LEFT       &kp DOWN    &kp UP     &kp RIGHT &trans &trans
-&trans     &trans  &trans  &trans   &trans       &trans    &trans     &trans       &trans  &trans  &trans    &trans
+&trans        &trans     &trans     &trans      &trans          &trans       &kp HOME     &kp PG_UP         &trans      &trans     &kp END     &trans
+&mo NAV_L     &trans     &trans     &trans      &trans          &trans       &kp LEFT     &kp DOWN    &kp UP     &kp RIGHT &trans &trans
+&trans        &trans     &trans     &trans      &trans          &trans       &trans       &kp PG_DN       &trans  &trans  &trans    &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
@@ -125,7 +125,7 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans     &kp LBRC   &kp AMPS   &kp STAR    &kp LPAR     &kp RBRC     &trans     &trans    &trans       &trans       &trans     &bootloader
+&kp F1     &kp F2   &kp F3   &kp F4    &kp F5     &kp F6     &kp F7     &kp F8    &kp F9       &kp F10       &kp F11     &dp F12
 &trans     &kp COLON  &kp DLLR   &kp PRCNT   &kp CARET    &kp PLUS     &trans     &trans    &trans       &trans       &trans     &trans
 &trans     &kp TILDE  &kp EXCL   &kp AT      &kp HASH     &kp PIPE     &trans     &trans    &trans       &trans       &trans     &trans
 #ifdef TBLE_DUAL_2U
